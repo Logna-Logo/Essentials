@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Sphere.ma
-//Last modified: Wed, Aug 27, 2025 04:04:11 PM
+//Last modified: Wed, Aug 27, 2025 04:06:46 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,13 +11,13 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "4A98D74A-479D-C339-D440-B0911302440F";
+fileInfo "UUID" "DE0B8328-4FCC-BF45-2978-CDBDD13ABE57";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "A441E2E0-4A7B-0A93-12DB-0CB09DDBCD2C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.065919686980742 3.2581323207639001 -10.20771371201616 ;
-	setAttr ".r" -type "double3" -4.1999999999997897 113.59999999995118 0 ;
+	setAttr ".t" -type "double3" 20.322919481314049 6.2962917901619875 -4.6145612617955845 ;
+	setAttr ".r" -type "double3" -11.399999999998274 99.999999999948301 0 ;
 	setAttr ".rpt" -type "double3" -1.6456705888770365e-16 1.5324431445786517e-16 -4.991507841325075e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AF2620BA-40BA-BA1B-B414-ED9468305352";
