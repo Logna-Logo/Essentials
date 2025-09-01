@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Maya ASCII.ma
-//Last modified: Mon, Sep 01, 2025 03:03:09 PM
+//Last modified: Mon, Sep 01, 2025 03:06:42 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,24 +11,23 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "971B049C-499B-B553-2C70-54AD17483A30";
+fileInfo "UUID" "7DDD9346-4383-76A7-F834-D2BD76105D79";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "A441E2E0-4A7B-0A93-12DB-0CB09DDBCD2C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -36.97863127069278 15.027208509205806 -25.342743704213817 ;
-	setAttr ".r" -type "double3" -12.927206331837606 -2278.9650977101192 0 ;
-	setAttr ".rp" -type "double3" -5.3290705182007514e-15 -1.6306400674181987e-16 0 ;
-	setAttr ".rpt" -type "double3" 9.8161793504863282e-16 3.1143898103127064e-16 2.8524507248749079e-15 ;
+	setAttr ".t" -type "double3" 23.260541558933504 3.7108187635341743 38.800400966775783 ;
+	setAttr ".r" -type "double3" -0.6000000000000032 30.800000000000704 2.8928106583001113e-17 ;
+	setAttr ".rpt" -type "double3" -3.1308648129210838e-15 7.6610396159206137e-16 7.5311166811583963e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AF2620BA-40BA-BA1B-B414-ED9468305352";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 51.57330470899506;
+	setAttr ".coi" 44.999610965907976;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 6.9999999675287761 3.4895925521850586 -1 ;
+	setAttr ".tp" -type "double3" 0.22007523454768413 3.2395925521850586 0.14965913048145296 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "67CE9105-4572-C582-6149-F2AC3D157CCB";
@@ -88,7 +87,7 @@ createNode mesh -n "floor_mesh" -p "Floor";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.125 ;
+	setAttr ".pv" -type "double2" 0.5 0.375 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
