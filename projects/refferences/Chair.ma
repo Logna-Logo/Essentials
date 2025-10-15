@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Chair.ma
-//Last modified: Wed, Oct 15, 2025 01:43:37 AM
+//Last modified: Wed, Oct 15, 2025 01:44:59 AM
 //Codeset: 1252
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "C3305800-4E8E-CF90-7367-CCA176520113";
+fileInfo "UUID" "7F4DC87F-436A-109E-080F-3E8E142D79CC";
 createNode transform -n "chairmesh2";
 	rename -uid "E5C1C5A1-46F5-274B-9078-3DB2EF6622EE";
 	setAttr ".rp" -type "double3" -2.0428103653103202e-14 0 -9.325873406851527e-14 ;
@@ -21,13 +21,13 @@ createNode mesh -n "chairmesh2Shape" -p "chairmesh2";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.68719691038131714 0.44521201745374128 ;
+	setAttr ".pv" -type "double2" 1.309255063533783 0.58418059349060059 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 210 ".pt";
+	setAttr -s 211 ".pt";
 	setAttr ".pt[130]" -type "float3" 3.7252903e-09 0 0 ;
 	setAttr ".pt[265]" -type "float3" 2.3841858e-07 0 0 ;
 	setAttr ".pt[266]" -type "float3" 2.3841858e-07 0 0 ;
@@ -571,13 +571,13 @@ createNode mesh -n "polySurfaceShape1" -p "chairmesh2";
 createNode transform -s -n "persp";
 	rename -uid "BF95E684-4F73-8E9A-DCD8-10A82E8C3965";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.47279132364621135 9.8360205334406619 12.225933351975176 ;
-	setAttr ".r" -type "double3" -23.138352729408858 2886.1999999997083 5.9986262085512233e-16 ;
+	setAttr ".t" -type "double3" -0.095640214459569189 8.2295182463194472 10.946305219137408 ;
+	setAttr ".r" -type "double3" -14.738352729418834 2878.199999999913 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "B2538CAB-4DEE-0854-4CBD-02BFB42022D9";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 14.241543852161666;
+	setAttr ".coi" 10.612639215637653;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
